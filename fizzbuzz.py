@@ -1,15 +1,14 @@
 """
-
-for i=0 to 100 in steps of 100 do
-    if i % 3==0 and 1 % 5 == 0 do
+FOR i FROM 0 to 100 INCREMENT 1 do
+    IF i % 3==0 AND 1 % 5 == 0 do
         print fizzbuzz
-    else if i % 3 === 0:
+    ELSEIF i % 3 === 0:
         print fizz
-    else if  i % 5 ===0 ;
+    ELSEIF  i % 5 ===0 ;
         print buz
-    else
+    ELSE
         i
-    
+ENDFOR
 """
 
 for i in range(20):
