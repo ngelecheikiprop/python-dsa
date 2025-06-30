@@ -1,6 +1,6 @@
 """
 FOR i FROM 0 to 100 INCREMENT 1 do
-    IF i % 3==0 AND 1 % 5 == 0 do
+    IF i % 3 == 0 AND 1 % 5 == 0 do
         print fizzbuzz
     ELSEIF i % 3 === 0:
         print fizz
@@ -8,6 +8,7 @@ FOR i FROM 0 to 100 INCREMENT 1 do
         print buz
     ELSE
         i
+    ENDIF
 ENDFOR
 """
 
