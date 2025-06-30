@@ -36,7 +36,10 @@ def permutate(letters):
 
     rotate function 
     """
-    pass
+    print(letters)
+    print(rotate(letters))
+    print(letters[0], end="")
+    print(swap(letters[1:]))
 
 
 def rotate(word):
@@ -86,7 +89,7 @@ def replace(letter, char,  idx):
 
 rotate("abc")
 
-
+permutate("abc")
 letters = "abcd"
 len(letters)
 rep_a = replace(letters,'x', 4)

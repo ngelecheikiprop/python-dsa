@@ -18,6 +18,7 @@ def reverse_array(array):
     i = len(array) - 1
 
     while i >= 0:
+        print(i)
         reversed_array.append(array[i])
         i -= 1
     
@@ -25,3 +26,5 @@ def reverse_array(array):
 
 cars = ["bentley", "subaru", "land rover"]
 print(reverse_array(cars))
+
+

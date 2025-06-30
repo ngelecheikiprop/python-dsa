@@ -37,7 +37,6 @@ print(f"the max diff of the number given is : {maxDiff(11891)}")
 
 
 """
-
 ===================
 white boarding 
 ===================
