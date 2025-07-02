@@ -26,7 +26,13 @@ head(data -> next(data, next()))
 
 traveersl - print self head -> go next -> print next head
 
-when making a linked list -> add the first data 
+when making a linked list -> add the first data
+
+when deleting an item
+=======================
+
+check the next
+if next data is what I want , connect its next to me 
 """
 
 class Node:
@@ -46,6 +52,18 @@ class LinkedList:
         self.head = Node(data)
         self.head.next = temp
 
+    def delete_node(self, data):
+        first = self.head
+        while first:
+            if first.next.data is not None and  first.next.data == data:
+                first.next = first.next.next
+                break
+            first = first.next
+
+
+
+            
+
 family = LinkedList()
 family.head = Node("Vitalis")
 wife = Node("Alexia")
@@ -56,7 +74,11 @@ family.head.next = wife
 wife.next = first_kid
 first_kid.next = second_kid
 
-LinkedList.traversal(family)
+# LinkedList.traversal(family)
 
 family.insert_new_header("Ngelechei")
 LinkedList.traversal(family)
+
+print("===================================")
+
+family.traversal()
